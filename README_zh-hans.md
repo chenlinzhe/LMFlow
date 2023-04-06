@@ -30,7 +30,7 @@
 <p align="center" width="100%">
 <img src="assets/features.png" alt="LMFlow-features" style="width: 100%; min-width: 300px; display: block; margin: auto;">
 </p>
-
+ 
 
 ## Latest News
 * [2023-04-02] [Web service is online!](https://lmflow.com/)
@@ -114,6 +114,12 @@ LLaMA 33B（LoRA）的性能仅经过约16小时的微调，即可在PubMedQA和
 | LLaMA33B-medical | ![completed](https://geps.dev/progress/100) |LLaMA-33B |  [Google Drive](https://drive.google.com/file/d/14N9o_1pwHmVuSikQ3orMVzZDrLYJC0iM/view?usp=share_link) |
 | LLaMA65B-medical | ![training](https://geps.dev/progress/90) | LLaMA-65B | Google Drive |
 
+colab运行补充：
+1.git,pip等命令前，需要加上！才能执行
+2.不能直接就！cd，而要用 %cd
+3.常用%ls，检查当前目录是否正确，因为个别包安装后，当前目录会有所变化
+4.wandb连接错误时，使用语句关闭：!wandb offline
+5.单元格提交后，重复提交，可能会生成多余数据，使用语句清除：!rm -rf ~/.cache/huggingface/datasets
 
 ## Supported Pipelines
 
